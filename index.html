@@ -1,83 +1,132 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trädgårdshjälp</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background-color: #f4f7f5;
-            color: #333;
-        }
-        header {
-            background-color: #2e7d32;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-        section {
-            padding: 20px;
-            max-width: 800px;
-            margin: auto;
-        }
-        .box {
-            background: white;
-            padding: 15px;
-            margin: 10px 0;
-            border-radius: 10px;
-        }
-        footer {
-            text-align: center;
-            padding: 15px;
-            background: #2e7d32;
-            color: white;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trädgårdshjälp</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0f1a14;
+    color: #fff;
+}
+
+header {
+    padding: 60px 20px;
+    text-align: center;
+    background: linear-gradient(120deg, #1b2e22, #0f1a14);
+}
+
+header h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #cfcfcf;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #f4b400;
+    color: black;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    max-width: 1000px;
+    margin: auto;
+    padding: 30px 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #16241c;
+    padding: 20px;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.highlight {
+    background: #f4b400;
+    color: black;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #0b140f;
+    color: #aaa;
+}
+</style>
+
 </head>
+
 <body>
 
 <header>
     <h1>🌿 Trädgårdshjälp av två bröder</h1>
     <p>Enkelt, pålitligt och flexibelt</p>
+    <a class="btn" href="#">Kontakta oss</a>
 </header>
 
 <section>
-    <div class="box">
-        <h2>Om oss</h2>
-        <p>
-        Vi är två bröder som hjälper till med det mesta i trädgården – gräsklippning,
-        trimning där klipparen inte når, ogräsrensning och enklare sysslor.
-        Behöver du bära, flytta eller fixa något? Vi löser det!
-        </p>
-        <p>
-        Vi hjälper främst äldre och personer som behöver extra stöd,
-        men också alla som inte har tid eller möjlighet att ta hand om sin trädgård.
-        </p>
-    </div>
+    <h2>Om oss</h2>
+    <p>
+    Vi är två bröder som hjälper till med det mesta i trädgården – från gräsklippning och trimning till enklare sysslor.
+    Vi hjälper främst äldre och personer som behöver stöd, men även dig som vill spara tid.
+    </p>
+</section>
 
-    <div class="box">
-        <h2>Tjänster & priser</h2>
-        <p><strong>Liten trädgård:</strong> från 200 kr</p>
-        <p><strong>Mellan trädgård:</strong> från 300 kr</p>
-        <p><strong>Stor trädgård:</strong> från 400–500 kr</p>
-        <p>Extra arbete kan läggas till vid behov.</p>
+<section>
+    <h2>Tjänster</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>Liten trädgård</h3>
+            <p>Från 200 kr – snabb och enkel fix</p>
+        </div>
+        <div class="card">
+            <h3>Mellan</h3>
+            <p>Från 300 kr – mer noggrant arbete</p>
+        </div>
+        <div class="card highlight">
+            <h3>Stor</h3>
+            <p>400–500 kr – komplett service</p>
+        </div>
     </div>
+</section>
 
-    <div class="box">
-        <h2>Varför välja oss?</h2>
-        <p>✔️ Pålitliga</p>
-        <p>✔️ Arbetsamma</p>
-        <p>✔️ Flexibla</p>
-        <p>✔️ Referens finns på begäran</p>
+<section>
+    <h2>Varför välja oss?</h2>
+    <div class="grid">
+        <div class="card">✔️ Pålitliga</div>
+        <div class="card">✔️ Arbetsamma</div>
+        <div class="card">✔️ Flexibla</div>
+        <div class="card">✔️ Referenser finns</div>
     </div>
+</section>
 
-    <div class="box">
-        <h2>Kontakt</h2>
+<section>
+    <h2>Kontakt</h2>
+    <div class="card">
         <p>📍 Verksamma i: [Ort]</p>
-        <p>📞 [Abdullah] & [Yosif]</p>
-        <p>📱 [+46765658905]</p>
+        <p>📞 [Ditt namn] & [Din brors namn]</p>
+        <p>📱 [Telefonnummer / Instagram]</p>
     </div>
 </section>
 
