@@ -3,46 +3,57 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Trädgårdshjälp</title>
+<title>GrönFix UF</title>
 
 <style>
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background: #0f1a14;
-    color: #fff;
+    font-family: Arial;
+    background: #0c1a12;
+    color: white;
 }
 
-header {
-    padding: 60px 20px;
+/* NAVBAR */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10%;
+    position: sticky;
+    top: 0;
+    background: #0c1a12;
+}
+
+nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.logo {
+    font-weight: bold;
+    color: #7fbf3f;
+}
+
+/* HERO */
+.hero {
     text-align: center;
-    background: linear-gradient(120deg, #1b2e22, #0f1a14);
-}
-
-header h1 {
-    font-size: 40px;
-    margin-bottom: 10px;
-}
-
-header p {
-    color: #cfcfcf;
+    padding: 80px 20px;
+    background: linear-gradient(#1b2e22, #0c1a12);
 }
 
 .btn {
+    padding: 12px 25px;
+    background: #7fbf3f;
+    border-radius: 25px;
+    text-decoration: none;
+    color: black;
     display: inline-block;
     margin-top: 15px;
-    padding: 10px 20px;
-    background: #f4b400;
-    color: black;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: bold;
 }
 
+/* SECTIONS */
 section {
-    max-width: 1000px;
-    margin: auto;
-    padding: 30px 20px;
+    padding: 60px 10%;
 }
 
 .grid {
@@ -52,86 +63,110 @@ section {
 }
 
 .card {
-    background: #16241c;
+    background: #14251b;
     padding: 20px;
     border-radius: 15px;
-    transition: 0.3s;
 }
 
-.card:hover {
-    transform: translateY(-5px);
+/* IMAGES */
+img {
+    width: 100%;
+    border-radius: 10px;
 }
 
-.highlight {
-    background: #f4b400;
+/* FORM */
+form {
+    background: white;
     color: black;
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 400px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
 }
 
 footer {
     text-align: center;
     padding: 20px;
-    background: #0b140f;
-    color: #aaa;
+    background: #08120c;
 }
 </style>
-
 </head>
 
 <body>
 
-<header>
-    <h1>🌿 Trädgårdshjälp av två bröder</h1>
-    <p>Enkelt, pålitligt och flexibelt</p>
-    <a class="btn" href="#">Kontakta oss</a>
-</header>
+<!-- NAVBAR -->
+<nav>
+    <div class="logo">🌿 GrönFix</div>
+    <div>
+        <a href="#om">Om oss</a>
+        <a href="#tjanster">Tjänster</a>
+        <a href="#bilder">Före/Efter</a>
+        <a href="#kontakt">Kontakt</a>
+    </div>
+</nav>
 
-<section>
+<!-- HERO -->
+<div class="hero">
+    <h1>Trädgårdshjälp enkelt & smidigt</h1>
+    <p>Vi hjälper äldre och alla som vill ha en fin trädgård utan stress</p>
+    <a class="btn" href="#kontakt">Boka nu</a>
+</div>
+
+<!-- OM OSS -->
+<section id="om">
     <h2>Om oss</h2>
     <p>
-    Vi är två bröder som hjälper till med det mesta i trädgården – från gräsklippning och trimning till enklare sysslor.
-    Vi hjälper främst äldre och personer som behöver stöd, men även dig som vill spara tid.
+    Vi är två bröder som hjälper till med gräsklippning, trimning,
+    ogräsrensning och andra sysslor. Vi är pålitliga, flexibla och arbetsamma.
     </p>
 </section>
 
-<section>
+<!-- TJÄNSTER -->
+<section id="tjanster">
     <h2>Tjänster</h2>
     <div class="grid">
-        <div class="card">
-            <h3>Liten trädgård</h3>
-            <p>Från 200 kr – snabb och enkel fix</p>
-        </div>
-        <div class="card">
-            <h3>Mellan</h3>
-            <p>Från 300 kr – mer noggrant arbete</p>
-        </div>
-        <div class="card highlight">
-            <h3>Stor</h3>
-            <p>400–500 kr – komplett service</p>
-        </div>
+        <div class="card">Liten trädgård – från 200 kr</div>
+        <div class="card">Mellan – från 300 kr</div>
+        <div class="card">Stor – 400–500 kr</div>
     </div>
 </section>
 
-<section>
-    <h2>Varför välja oss?</h2>
+<!-- BILDER -->
+<section id="bilder">
+    <h2>Före & Efter</h2>
     <div class="grid">
-        <div class="card">✔️ Pålitliga</div>
-        <div class="card">✔️ Arbetsamma</div>
-        <div class="card">✔️ Flexibla</div>
-        <div class="card">✔️ Referenser finns</div>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952">
+            <p>Före</p>
+        </div>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1598902108854-10e335adac99">
+            <p>Efter</p>
+        </div>
     </div>
 </section>
 
-<section>
-    <h2>Kontakt</h2>
-    <div class="card">
-        <p>📍 Verksamma i: [Ort]</p>
-        <p>📞 [Ditt namn] & [Din brors namn]</p>
-        <p>📱 [Telefonnummer / Instagram]</p>
-    </div>
+<!-- KONTAKT -->
+<section id="kontakt">
+    <h2>Boka tjänst</h2>
+
+    <form action="https://formsubmit.co/DITTMAIL@gmail.com" method="POST">
+        <input type="text" name="name" placeholder="Namn" required>
+        <input type="text" name="phone" placeholder="Telefon" required>
+        <input type="hidden" name="_captcha" value="false">
+        <button class="btn" type="submit">Skicka</button>
+    </form>
+
+    <p>📞 [Telefonnummer]</p>
 </section>
 
 <footer>
-    <p>© 2026 Trädgårdshjälp</p>
+    <p>© 2026 GrönFix</p>
 </footer>
 
 </body>
